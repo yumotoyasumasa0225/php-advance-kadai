@@ -41,8 +41,8 @@
  try {
      $pdo = new PDO($dsn, $user, $password);
  
-     // booksテーブルからbook_codeカラムのデータを取得するためのSQL文を変数$sql_selectに代入する
-     $sql_select = 'SELECT book_code FROM books';
+     // genresテーブルからgenre_codeカラムのデータを取得するためのSQL文を変数$sql_selectに代入する
+     $sql_select = 'SELECT genre_code FROM genres';
  
      // SQL文を実行する
      $stmt_select = $pdo->query($sql_select);
